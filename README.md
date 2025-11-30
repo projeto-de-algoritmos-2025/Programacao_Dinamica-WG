@@ -1,7 +1,7 @@
 
-# Exercícios sobre Grafos 1
+# Exercícios sobre Programação Dinâmica
 
-**Conteúdo da Disciplina**: Grafos 1<br>
+**Conteúdo da Disciplina**: Programação Dinâmica<br>
 
 ## Alunos
 
@@ -12,41 +12,44 @@
 
 ## Sobre
 
-Esse exercício visa buscar a resolução dos exercícios escolhidos pela plataforma do LeetCode, com o objetivo de mostrar nossos conhecimentos aprendidos no conteúdo de grafos 1. Neles vamos aplicar conceitos e conhecimentos de lógica aprendidos na matéria de Projeto de Algoritmos com o professor Maurício Serrano.
-
-Principais funcionalidades:
-- Descobrir o maior caminho dentro de uma árvore.
-- Identificar a existências de ciclos e pais duplicados para um mesmo nó em um grafo direcionado.
-- Identificação de ciclos dentro de uma implementação de uma matriz de adjacência.
+Esse exercício visa buscar a resolução dos exercícios escolhidos pela plataforma do LeetCode, com o objetivo de mostrar nossos conhecimentos aprendidos no conteúdo de Programação Dinâmica. Neles vamos aplicar conceitos e conhecimentos de lógica aprendidos na matéria de Projeto de Algoritmos com o professor Maurício Serrano.
 
 
 ## Screenshots
 
-### Visualização de Grafo → Execução de Algoritmo →  Resultado de Caminho Mínimo
+### Questão 1   
 
-#### Questão 1   
-
-![Programação do curso](./imgs/questao_1.png)
+![alt text](imgs/questao_1.png)
 
 #### Questão 1 no LeetCode  
 
-![Programação do curso](./imgs/questao_1_resp.png)
+![q1](./imgs/questao_1_resp.png)
+
+**Explicação da Resolução:** O código resolve o problema de transformar um número N em 0 usando o mínimo de opreações de bit, usando matemática como solução. Primeiramente é definido um custo fixo para resolver o bit mais significativo, e depois, é utilizado recursividade para resolver o restante do número que sobrou.
 
 ---
 
-#### Questão 2   
+### Questão 2   
 
-![Execução de Algoritmo](./imgs/questao_2.png)
+![q2](./imgs/questao_2.png)
 
-**Explicação da Resolução:** Foi utilizado dois vetores auxiliares para marcação de quem são filhos e quem são pais dentro das arestas passadas, com isso seria possível verificar se algum filho estava apontando para algum pai (Ciclo) ou se algum filho estava recebendo um segundo pai (Quebra da árvore).
+#### Questão 2 no LeetCode  
+
+![q2](./imgs/questao_2_resp.png)
+
+**Explicação da Resolução:** o loop principal, que modifica a própria matriz: se uma célula matrix for 1, seu novo valor é definido como $1$ mais o mínimo dos valores em seus três vizinhos imediatos (superior, esquerdo e diagonal superior-esquerdo). Este novo valor matrix passa a representar o tamanho lateral do maior quadrado de 1s que termina naquela posição. O segundo loop soma todos os valores da matriz modificada (a tabela DP), pois a soma de todos os tamanhos laterais é igual ao número total de submatrizes quadradas de 1s.
 
 ---
 
-#### Questão 3   
+### Questão 3   
 
-![Resultado de Caminho Mínimo](./imgs/questao_3.png)
+![q3](./imgs/)
 
-**Explicação da Resolução:** Para esta questão foi utilizado uma lógica de matriz de adjacencia que guardava todas as dependências fornecidas. Com isso foi desenvolvido um modelo de DFS para percorrer a matriz com ajuda de um vetor de visitados, para analisar se em algum momento as dependências de cursos criavam um ciclo.
+#### Questão 3 no LeetCode  
+
+![q3](./imgs/)
+
+**Explicação da Resolução:** 
 
 ---
 
@@ -60,7 +63,7 @@ gcc questao_x.c -o questao_x && ./questao_x
 
 ## Apresentação
 
-Vídeo disponível em: [youtube](https://youtu.be/K3ExD20ChGY)
+Vídeo disponível em: [youtube](#)
 
 ## Outros
 
