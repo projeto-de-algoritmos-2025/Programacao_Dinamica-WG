@@ -63,7 +63,7 @@ gcc questao_x.c -o questao_x && ./questao_x
 
 ## Apresentação
 
-Vídeo disponível em: [youtube](#)
+Vídeo disponível em: [youtube](https://youtu.be/b5-JY6kHyuQ)
 
 ## Outros
 
